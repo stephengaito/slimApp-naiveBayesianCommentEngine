@@ -1,6 +1,24 @@
 {
+  "name": "stephengaito/commentEngine",
+  "type": "library",
+  "description": "A Slim based comment moderation engine using Naive Bayesian Classification.",
+  "keywords": ["comments","Bayesian", "Classifier"],
+  "homepage": "http://github.com/stephengaito/slimApp-naiveBayesianCommentEngine",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stephen Gaito",
+      "email": "stephen@perceptisys.co.uk",
+      "homepage": "https://github.com/stephengaito/slimApp-naiveBayesianCommentEngine",
+      "role": "Developer"
+    }
+  ],
   "require": {
+    "php": ">=5.3.0",
     "slim/slim": "2.*",
     "erusev/parsedown": "1.5.*"
+  }
+  "autoload": {
+    "psr-0": { "CommentEngine": "." }
   }
 }
